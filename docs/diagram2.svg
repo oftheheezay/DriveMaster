@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836.9300000000001 1256.4" width="836.9300000000001" height="1256.4" style="--bg:#141414;--fg:#fafafa;--line:#8a8a8a;--accent:#8cb7fa;--muted:#b5b5b5;--surface:#1f1f1f;--border:#424242">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Google Sans', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="_start" data-to="Черновик" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Первичное обращение" points="341.41550000000007,68 341.41550000000007,184.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Черновик" data-to="Осмотр" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Автомобиль принят на пост приемки" points="341.41550000000007,221.2 341.41550000000007,337.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Осмотр" data-to="Согласование_сметы" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Сформирован перечень работ" points="341.41550000000007,374.4 341.41550000000007,490.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Согласование_сметы" data-to="Отменен" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Клиент отказался от ремонта" points="312.19383333333343,527.6 312.19383333333343,539.6000000000001 119,539.6000000000001 119.00000000000001,631.9000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Согласование_сметы" data-to="В_работе" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Смета утверждена клиентом" points="370.6371666666667,527.6 370.6371666666667,563.6000000000001 489.6760000000001,563.6000000000001 489.6760000000001,631.9000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="В_работе" data-to="Ожидание_запчастей" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Нужной детали нет на складе" points="459.3070000000001,668.8000000000001 459.3070000000001,704.8000000000001 238,704.8000000000001 238,785.1 300.5708333333334,785.1 300.5708333333334,797.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Ожидание_запчастей" data-to="В_работе" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Запчасть поступила и выдана" points="359.0141666666667,797.1 359.0141666666667,785.1 405.3980000000001,785.1 405.3980000000001,716.8000000000001 479.5530000000001,716.8000000000001 479.5530000000001,668.8000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="В_работе" data-to="Контроль_качества" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Работы завершены механиком" points="499.7990000000001,668.8000000000001 499.7990000000001,716.8000000000001 573.9540000000002,716.8000000000001 573.9540000000002,785.1 632.4478333333334,785.1 632.4478333333334,797.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Контроль_качества" data-to="В_работе" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Обнаружен брак/недочет" points="688.4211666666667,797.1 688.4211666666667,785.1 730.7280000000001,785.1 730.7280000000001,704.8000000000001 520.0450000000001,704.8000000000001 520.0450000000001,668.8000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Контроль_качества" data-to="Готов_к_выдаче" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Проверка ОТК пройдена" points="660.4345000000001,834 660.4345000000001,950.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Готов_к_выдаче" data-to="Закрыт_и_Оплачен" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Внесена оплата, подписан акт" points="660.4345000000001,987.1999999999999 660.4345000000001,1103.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Закрыт_и_Оплачен" data-to="_end" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="660.4345000000001,1140.4 660.4345000000001,1188.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Отменен" data-to="_end2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="119.00000000000001,668.8000000000001 119,704.8000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="_start" data-to="Черновик" data-label="Первичное обращение">
+  <rect x="277.91550000000007" y="111" width="126.35200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="341.09150000000005" y="126.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Первичное обращение</text>
+</g>
+<g class="edge-label" data-from="Черновик" data-to="Осмотр" data-label="Автомобиль принят на пост приемки">
+  <rect x="242.41550000000007" y="264.2" width="197.03800000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="340.93450000000007" y="279.34999999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Автомобиль принят на пост приемки</text>
+</g>
+<g class="edge-label" data-from="Осмотр" data-to="Согласование_сметы" data-label="Сформирован перечень работ">
+  <rect x="259.41550000000007" y="417.40000000000003" width="163.77400000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="341.30250000000007" y="432.55" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Сформирован перечень работ</text>
+</g>
+<g class="edge-label" data-from="Согласование_сметы" data-to="Отменен" data-label="Клиент отказался от ремонта">
+  <rect x="36" y="546.6000000000001" width="165.55600000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="118.77800000000002" y="561.7500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Клиент отказался от ремонта</text>
+</g>
+<g class="edge-label" data-from="Согласование_сметы" data-to="В_работе" data-label="Смета утверждена клиентом">
+  <rect x="410.6760000000001" y="570.6000000000001" width="157.83400000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="489.59300000000013" y="585.7500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Смета утверждена клиентом</text>
+</g>
+<g class="edge-label" data-from="В_работе" data-to="Ожидание_запчастей" data-label="Нужной детали нет на складе">
+  <rect x="157" y="723.8000000000001" width="161.39800000000005" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="237.699" y="738.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Нужной детали нет на складе</text>
+</g>
+<g class="edge-label" data-from="Ожидание_запчастей" data-to="В_работе" data-label="Запчасть поступила и выдана">
+  <rect x="322.3980000000001" y="723.8000000000001" width="165.55600000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="405.1760000000001" y="738.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Запчасть поступила и выдана</text>
+</g>
+<g class="edge-label" data-from="В_работе" data-to="Контроль_качества" data-label="Работы завершены механиком">
+  <rect x="491.9540000000001" y="723.8000000000001" width="163.77400000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="573.8410000000001" y="738.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Работы завершены механиком</text>
+</g>
+<g class="edge-label" data-from="Контроль_качества" data-to="В_работе" data-label="Обнаружен брак/недочет">
+  <rect x="659.7280000000001" y="723.8000000000001" width="141.20200000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="730.3290000000001" y="738.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Обнаружен брак/недочет</text>
+</g>
+<g class="edge-label" data-from="Контроль_качества" data-to="Готов_к_выдаче" data-label="Проверка ОТК пройдена">
+  <rect x="592.9345000000001" y="877" width="134.074" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="659.9715000000001" y="892.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Проверка ОТК пройдена</text>
+</g>
+<g class="edge-label" data-from="Готов_к_выдаче" data-to="Закрыт_и_Оплачен" data-label="Внесена оплата, подписан акт">
+  <rect x="576.4345000000001" y="1030.2" width="167.93200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="660.4005000000001" y="1045.3500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Внесена оплата, подписан акт</text>
+</g>
+<g class="node" data-id="_start" data-label="" data-shape="state-start">
+  <circle cx="341.41550000000007" cy="54" r="12" fill="var(--_text)" stroke="none" />
+</g>
+<g class="node" data-id="Черновик" data-label="Черновик" data-shape="rounded">
+  <rect x="290.80050000000006" y="184.3" width="101.22999999999999" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="341.41550000000007" y="202.75" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Черновик</text>
+</g>
+<g class="node" data-id="Осмотр" data-label="Осмотр" data-shape="rounded">
+  <rect x="298.2105000000001" y="337.5" width="86.41" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="341.41550000000007" y="355.95" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Осмотр</text>
+</g>
+<g class="node" data-id="Согласование_сметы" data-label="Согласование_сметы" data-shape="rounded">
+  <rect x="253.75050000000007" y="490.70000000000005" width="175.32999999999998" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="341.41550000000007" y="509.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Согласование_сметы</text>
+</g>
+<g class="node" data-id="Отменен" data-label="Отменен" data-shape="rounded">
+  <rect x="72.09000000000002" y="631.9000000000001" width="93.82" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="119.00000000000001" y="650.3500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Отменен</text>
+</g>
+<g class="node" data-id="В_работе" data-label="В_работе" data-shape="rounded">
+  <rect x="439.0610000000001" y="631.9000000000001" width="101.22999999999999" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="489.6760000000001" y="650.3500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">В_работе</text>
+</g>
+<g class="node" data-id="Ожидание_запчастей" data-label="Ожидание_запчастей" data-shape="rounded">
+  <rect x="242.12750000000005" y="797.1" width="175.32999999999998" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="329.7925" y="815.5500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Ожидание_запчастей</text>
+</g>
+<g class="node" data-id="Контроль_качества" data-label="Контроль_качества" data-shape="rounded">
+  <rect x="576.4745" y="797.1" width="167.92" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="660.4345000000001" y="815.5500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Контроль_качества</text>
+</g>
+<g class="node" data-id="Готов_к_выдаче" data-label="Готов_к_выдаче" data-shape="rounded">
+  <rect x="587.5895" y="950.3" width="145.69" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="660.4345000000001" y="968.75" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Готов_к_выдаче</text>
+</g>
+<g class="node" data-id="Закрыт_и_Оплачен" data-label="Закрыт_и_Оплачен" data-shape="rounded">
+  <rect x="580.1795000000002" y="1103.5" width="160.51" height="36.900000000000006" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="660.4345000000002" y="1121.95" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Закрыт_и_Оплачен</text>
+</g>
+<g class="node" data-id="_end" data-label="" data-shape="state-end">
+  <circle cx="660.4345000000001" cy="1202.4" r="12" fill="none" stroke="var(--_text)" stroke-width="1.5" />
+  <circle cx="660.4345000000001" cy="1202.4" r="8" fill="var(--_text)" stroke="none" />
+</g>
+<g class="node" data-id="_end2" data-label="" data-shape="state-end">
+  <circle cx="119" cy="718.8000000000001" r="12" fill="none" stroke="var(--_text)" stroke-width="1.5" />
+  <circle cx="119" cy="718.8000000000001" r="8" fill="var(--_text)" stroke="none" />
+</g>
+</svg>
