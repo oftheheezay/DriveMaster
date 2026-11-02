@@ -5,7 +5,7 @@ import sqlite3
 
 app = FastAPI(
     title="DriveMaster API",
-    description="Информационная система управления заказ-нарядами СТО (прототип)",
+    description="Информационная система управления заказ-нарядами СТО",
     version="1.0.0"
 )
 
